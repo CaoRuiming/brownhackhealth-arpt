@@ -5,6 +5,12 @@ import './App.css';
 
 class App extends Component {
   render() {
+		const videoStyle = {
+			"transform": "rotateY(180deg)",
+			"-webkit-transform": "rotateY(180deg)", /* Safari and Chrome */
+			"-moz-transform": "rotateY(180deg)", /* Firefox */
+		};
+
     return (
       <div className="App">
         <div className="App-header">
@@ -18,7 +24,7 @@ class App extends Component {
 					audio={ false }
 					height={ 460 }
 					width={ 760 }
-					style={{  }}
+					style={ videoStyle }
 				/>
       </div>
     );
